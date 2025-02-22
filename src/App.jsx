@@ -1,12 +1,9 @@
+import Body from "./Components/Body"
 
-import './App.css'
-
-function App() {
+const App= () => {
 
   return (
-    <div className='text-center'>
-      <p className=''>Hello World!</p>
-    </div>
+       <Body/>
   )
 }
 

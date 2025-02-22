@@ -1,8 +1,35 @@
-# React + Vite
+# Netflix GPT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ - Create react app
+ - Configure tailwind CSS
+ - Routing
+ - header
+ - login form
+ - sign up form
+ - Form validation
+ - useRef Hook
 
-Currently, two official plugins are available:
+ **Note** - if writing big forms use library **Formic**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Setup Tailwind
+
+1. Go to https://tailwindcss.com/docs/installation/framework-guides website
+2. select the framework-guides
+3. select framework and follow the setup instructions
+
+# Features 
+ - Login/Signup page
+    - Signin/signup Form
+    - redirect to Browse page
+ - Browse (after autentication)
+    - Header
+    - Main movie
+        - Trailer in background
+        - Title & Description
+        - Movie suggestions
+            - MovieLists
+ - NetflixGPT
+    - Search Bar
+    - Movie Recommendations
+
+\\ Note: For Form validations use regex(regular expression)
