@@ -8,6 +8,14 @@
  - sign up form
  - Form validation
  - useRef Hook
+ - Firebase Setup
+ - Deploying app to production
+ - create signup account
+ - implement Sign in user API
+ - Created redux store with userSlice
+ - Implemented sign out
+ - updating profile
+ - Fetch the TMDB Movies
 
  **Note** - if writing big forms use library **Formic**
 
