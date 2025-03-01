@@ -8,7 +8,7 @@ const useMovieVideos= (movieId) => {
     const dispatch = useDispatch()
     useEffect(()=>{
         getMovieVideo()
-    },[])
+    },[movieId])
 
     const getMovieVideo = async() => {
 
@@ -16,6 +16,7 @@ const useMovieVideos= (movieId) => {
         const json= await data.json()
 
         const video = json.results.filter(video => video.type==="Trailer") 
+        console.log(video)
 
         if(video.length !== 0){
             dispatch(addMovieTrailer([movieId,video[0]]))
