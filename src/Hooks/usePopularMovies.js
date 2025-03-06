@@ -1,14 +1,15 @@
 import { useEffect } from "react"
-import { API_OPTIONS } from "./Constants"
-import { useDispatch } from "react-redux"
-import { addPopularMovies } from "./moviesSlice"
+import { API_OPTIONS } from "../../Utils/Constants"
+import { useDispatch, useSelector } from "react-redux"
+import { addPopularMovies } from "../../Utils/ReduxStore/moviesSlice"
 
 
 const usePopularMovies = () => {
     const dispatch=useDispatch()
+    const popularMovies = useSelector(store => store.movies.popularMovies)
 
     useEffect(()=>{
-       getNowPlayingMovies()
+       !popularMovies && getNowPlayingMovies()
 
     },[])
 

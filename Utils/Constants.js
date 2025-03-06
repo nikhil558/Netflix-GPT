@@ -7,7 +7,13 @@ export const API_OPTIONS= {
     method: 'GET',
     headers: {
         accept:"application/json",
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MzNjOTI3OGRhZDlhYzNlZTc5OThkNTBlMWY5MWVmZCIsIm5iZiI6MTc0MDY1MzQ1Ni41NDksInN1YiI6IjY3YzA0MzkwNzQwYzk1YTM3MWEyNGI0ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.FV9aAQI1xDMdRagWiGwoBQQOOr4UaYcHEUycnSqqUnc'
+        // Authorization: 'Bearer '+ import.meta.env.TMDB_KEY
+        Authorization: 'Bearer '+ import.meta.env.VITE_TMDB_KEY
+
     }
 }
 
+export const LANG_PREF = [{identifier: "en", name:"English"},{identifier: "hin", name:"हिन्दी"},{identifier: "tel", name:"తెలుగు"}]
+
+export const OPENAI_GPT_KEY = ""
+    

@@ -4,7 +4,7 @@ import FormValidation from "../../Utils/FormValidation";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../../Utils/Firebase";
 import { useDispatch } from "react-redux";
-import { AddUser } from "../../Utils/userSlice";
+import { AddUser } from "../../Utils/ReduxStore/userSlice";
 import { BACKGROUND_IMAGE, PROFILE_PIC } from "../../Utils/Constants";
 
 const Login = () => {

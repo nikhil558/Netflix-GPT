@@ -31,7 +31,9 @@ const moviesSlice = createSlice({
             state.activeMovie=action.payload
         },
         replaceActiveMovie:(state, action) => {
-            state.activeMovie= state.nowPlayingMovies.filter(each=> each.id === action.payload)[0]    
+            // state.activeMovie= state.nowPlayingMovies.filter(each=> each.id === action.payload)[0]   
+            const allMoviesList=[...state.nowPlayingMovies,...state.popularMovies, ...state.topRatedMovies,...state.upcomingMovies]
+            state.activeMovie= allMoviesList.filter(each=> each.id === action.payload)[0] 
         }
     }
 })

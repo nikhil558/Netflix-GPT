@@ -36,6 +36,18 @@
  - TMDB Image CDN URL 
  - Made the browse page amazing with Tailwind CSS 
  - usePopularMovies Custom Hook 
+ - GPT search Page
+ - GPT search bar
+ - (Bonus)Multi-language feature in our app
+ - Get openai api key
+ - GPT Search API call 
+ - fetched GPTMoviesuggesstion from tmdb 
+ - create gptSlice added data
+ - reused movie list component to make suggestion container
+ - adding .env file 
+ - adding .env file to git ignore
+ - Memoization 
+ - Made our site responsive
 
  **Note** - if writing big forms use library **Formic**
 
@@ -61,3 +73,12 @@
     - Movie Recommendations
 
 \\ Note: For Form validations use regex(regular expression)
+
+# Deploy using firebase
+ - firebase login
+ - firebase init
+ - firebase serve
+ - firebase deploy
+
+# Project Setup
+- Before starting the project please add .env file and add TMDB and OPENAI KEY into it.
